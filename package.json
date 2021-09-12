@@ -1,0 +1,23 @@
+{
+  "name": "First-Python-Flask-Desktop-App",
+  "version": "1.0.0",
+  "description": "A mini desktop application built using flask and python",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnjanaLak/First-Python-Flask-Desktop-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnjanaLak/First-Python-Flask-Desktop-App/issues"
+  },
+  "homepage": "https://github.com/AnjanaLak/First-Python-Flask-Desktop-App#readme",
+  "devDependencies": {
+    "electron": "^14.0.0"
+  }
+}
