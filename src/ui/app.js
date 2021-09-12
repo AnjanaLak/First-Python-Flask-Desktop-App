@@ -8,5 +8,30 @@ const body = document.getElementById('description')
 myform.addEventListener('submit', (e) => {
     e.preventDefault()
 
-    console.log("Hello World")
+    const newData = {
+        title: title.value,
+        body: body.value
+    }
+    
+    insertData(newData)
+
 })
+
+
+
+// Connecting with backend
+
+const insertData = (newData) => {
+    fetch('http://127.0.0.1:5000/add', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body:JSON.stringify(newData)
+    })
+    .then(resp => resp.json())
+    .then((data) => {
+        console.log(data)
+    })
+    .catch(error => console.log(error))
+}
