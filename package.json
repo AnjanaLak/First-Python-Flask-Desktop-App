@@ -19,5 +19,8 @@
   "homepage": "https://github.com/AnjanaLak/First-Python-Flask-Desktop-App#readme",
   "devDependencies": {
     "electron": "^14.0.0"
+  },
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1"
   }
 }
